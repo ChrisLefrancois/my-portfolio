@@ -1,0 +1,31 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 150px 0;
+  height: 70vh;
+}
+
+.banner h2 {
+  margin: 0;
+  color: rgb(208, 216, 250);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-weight: bold;
+}
+
+.banner h3 {
+  margin: 0;
+  color: rgb(130, 145, 180);
+  font-weight: bold;
+}
+
+.big-heading {
+  font-size: clamp(40px, 8vw, 80px)
+}
+
+p {
+  color: rgb(130, 145, 180);
+  font-size: 20px;
+  max-width: 600px;
+}
