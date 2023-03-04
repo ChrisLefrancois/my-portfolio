@@ -9,14 +9,14 @@
 
 .banner h2 {
   margin: 0;
-  color: rgb(208, 216, 250);
+  color: $light-slate;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-weight: bold;
 }
 
 .banner h3 {
   margin: 0;
-  color: rgb(130, 145, 180);
+  color: $slate;
   font-weight: bold;
 }
 
@@ -25,7 +25,11 @@
 }
 
 p {
-  color: rgb(130, 145, 180);
+  color: $slate;
   font-size: 20px;
   max-width: 600px;
+}
+
+.cherry-red {
+  color: rgb(210, 4, 45)
 }

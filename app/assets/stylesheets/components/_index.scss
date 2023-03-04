@@ -4,7 +4,12 @@
 @import "form_legend_clear";
 @import "navbar";
 @import "banner";
+@import "cards";
 
 body {
   background-color: $navy;
+}
+
+h2 {
+  color: $lightest-slate;
 }

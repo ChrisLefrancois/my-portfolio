@@ -1,7 +1,7 @@
 var myName = "Christopher Lefrancois.";
 var myArray = myName.split("");
 
-var myJob = "Fullstack Developer."
+var myJob = "I am a Fullstack Developer."
 var jobArray = myJob.split("");
 
 var loopTimer;
