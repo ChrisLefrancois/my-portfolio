@@ -2,6 +2,7 @@
   background-color: rgb(46, 46, 67);
   border-radius: 48px;
   padding: 52px;
+  // position: absolute;
 }
 
 .project {
@@ -11,6 +12,7 @@
   // box-shadow: 0px 14px 28px rgb(134, 151, 168 / 8%);
   transition: all 0.3s ease-in;
   border: 1px solid #eee;
+  margin-top: 24px;
 }
 
 .project:hover {
@@ -60,8 +62,6 @@
   margin-top: 48px;
 }
 
-
-
 .project .description-container .links a {
   font-size: 1.2rem;
   margin-right: 24px;
@@ -69,3 +69,12 @@
   display: inline-block;
   text-decoration: underline;
 }
+
+.project-two {
+  z-index: 1000;
+  position: relative;
+  left: 24px;
+  bottom: 40px;
+  background-color: rgb(46, 46, 67);
+}
+//
