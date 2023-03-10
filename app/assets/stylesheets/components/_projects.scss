@@ -1,0 +1,71 @@
+.projects {
+  background-color: rgb(46, 46, 67);
+  border-radius: 48px;
+  padding: 52px;
+}
+
+.project {
+  display: flex;
+  padding: 28px;
+  border-radius: 16px;
+  // box-shadow: 0px 14px 28px rgb(134, 151, 168 / 8%);
+  transition: all 0.3s ease-in;
+  border: 1px solid #eee;
+}
+
+.project:hover {
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.project .image-container {
+  -webkit-box-flex: 0;
+  flex: 0 0 400px;
+  height: auto;
+}
+
+.project .image-container img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 1px solid #ddd;
+}
+
+.project .description-container {
+  margin-left: 24px;
+}
+
+.project .description-container h3 {
+  color: $light-slate;
+  letter-spacing: 1px;
+}
+
+.project .description-container h4 {
+  color: $light-slate;
+  letter-spacing: 1px;
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+.project .description-container h4 span {
+  color: rgb(210, 4, 45);
+}
+
+.project .description-container ul {
+  color: $lightest-slate;
+  font-size: 0.94rem;
+  margin-top: 20px;
+}
+
+.project .description-container .links {
+  margin-top: 48px;
+}
+
+
+
+.project .description-container .links a {
+  font-size: 1.2rem;
+  margin-right: 24px;
+  color: rgb(210, 4, 45);
+  display: inline-block;
+  text-decoration: underline;
+}
