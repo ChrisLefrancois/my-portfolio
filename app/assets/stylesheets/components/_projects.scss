@@ -70,14 +70,6 @@
   text-decoration: underline;
 }
 
-.project-two {
-  z-index: 1000;
-  position: relative;
-  left: 24px;
-  bottom: 40px;
-  background-color: rgb(46, 46, 67);
-}
-
 @media only screen and (max-width: 767px) {
   .projects {
     background-color: transparent;
@@ -100,14 +92,9 @@
     padding: 20px;
   }
 
-  .project-two {
-    z-index: 0;
-    position: relative;
-    left: 0px;
-    bottom: 0px;
-    background-color: transparent;
+  .project .image-container img {
+    border-radius: 16px;
   }
-
 
 
 }

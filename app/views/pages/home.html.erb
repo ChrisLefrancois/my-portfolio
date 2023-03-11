@@ -21,7 +21,7 @@
         <p>Git</p>
       </div>
       <div class="rails skill">
-        <i class="fa-brands fax-rails icon-size"></i>
+        <%= inline_svg_tag("rails.svg", class: "some-class") %>
         <p>Rails</p>
       </div>
       <div class="html skill">
@@ -114,7 +114,7 @@
       </div>
     </div>
 
-        <div class="project project-two cycleasy">
+    <div class="project project-two cycleasy">
       <div class="image-container">
         <%= image_tag ("cycleasy.png"), alt: "cycleasy"%>
       </div>
@@ -133,5 +133,9 @@
     </div>
 
 
+  </div>
+
+  <div class="projects mt-5">
+    <%= render 'pages/form', contact: @contact %>
   </div>
 </div>
