@@ -78,7 +78,7 @@
       </div>
     </div>
 
-    <div class="project project-two flight-finder">
+    <div class="project flight-finder">
       <div class="image-container">
         <%= image_tag ("flight3.png"), alt: "flight finder"%>
       </div>
@@ -114,7 +114,7 @@
       </div>
     </div>
 
-    <div class="project project-two cycleasy">
+    <div class="project cycleasy">
       <div class="image-container">
         <%= image_tag ("cycleasy.png"), alt: "cycleasy"%>
       </div>
@@ -136,6 +136,28 @@
   </div>
 
   <div class="projects mt-5">
-    <%= render 'pages/form', contact: @contact %>
+    <div class="contacts">
+      <div class="get-in-touch mx-2">
+        <h5>Get in Touch</h5>
+        <div class="contact-box">
+        <i class="fa-regular fa-envelope mail-size"></i>
+          <div class="email-me">
+            <a href="mailto:chris.lefrancois1@gmail.com">chris.lefrancois1@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-box mt-3">
+          <p>My Social Networks</p>
+          <div class="social-network">
+            <a href="https://github.com/ChrisLefrancois" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/christopherlefrancois/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/Lef__Chris" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+        <div>
+          <h5 class="text-center mt-2">Contact Form</h5>
+          <%= render 'pages/form', contact: @contact %>
+        </div>
+    </div>
   </div>
 </div>

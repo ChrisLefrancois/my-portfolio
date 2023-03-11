@@ -1,0 +1,68 @@
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.contacts a {
+  color: $light-slate;
+  text-decoration: underline;
+}
+
+.contacts h5 {
+  color: $light-slate;
+}
+
+.contacts .get-in-touch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mail-size {
+  color: $light-slate;
+  font-size: 50px;
+}
+
+.contacts .contact-box {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+}
+
+.contacts .contact-box i {
+  padding: 12px;
+  margin-bottom: 18px;
+}
+
+.button-submit {
+  // position: relative;
+  // top: 20px;
+  border-radius: 36px;
+  padding: 16px 40px;
+  color: $navy;
+  background-color: $light-slate;
+}
+
+form label {
+  color: $light-slate;
+}
+
+.social-network i {
+  font-size: 30px;
+
+  &:hover {
+    transition: all .3s ease-in-out;
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+}
