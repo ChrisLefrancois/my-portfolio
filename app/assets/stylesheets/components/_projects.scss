@@ -13,6 +13,16 @@
   transition: all 0.3s ease-in;
   border: 1px solid #eee;
   margin-top: 24px;
+  transform: translateX(400%);
+  transition: transform 0.8s ease;
+}
+
+.project:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.project.show {
+  transform: translateX(0);
 }
 
 .project:hover {
@@ -79,6 +89,11 @@
   .project {
     display: block;
     padding: 0;
+    transform: translateX(0);
+  }
+
+  .project:nth-child(even) {
+    transform: translateX(0);
   }
 
   .project .image-container {
