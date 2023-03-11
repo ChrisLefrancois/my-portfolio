@@ -9,14 +9,7 @@ Rails.application.configure do
   config.cache_classes = false
   config.action_mailer.default_url_options = { host: "http://localhost:3000" }
 
-  # ActionMailer::Base.delivery_method = :smtp
-  # ActionMailer::Base.smtp_settings = {
-  #       port: ENV['MAIL_PORT_SMTP'],
-  #       address: ENV['MAIL_ADDRESS_SMTP'],
-  #       user_name: ENV['MAIL_LOGIN_SMTP'],
-  #       password: ENV['MAILGUN_PASSWORD_SMTP'],
-  #       authentication: :plain
-  #   }
+
   # Do not eager load code on boot.
   config.eager_load = false
 
