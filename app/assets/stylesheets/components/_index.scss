@@ -15,5 +15,19 @@ body {
 }
 
 h2 {
-  color: $lightest-slate;
+  color: rgb(210, 4, 45);;
+}
+
+@media only screen and (max-width: 767px) {
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .banner p {
+    text-align: center;
+  }
 }

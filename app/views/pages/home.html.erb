@@ -2,12 +2,12 @@
 
 <div class="container">
 
-  <h2 class="m-5" id="about">About Me</h2>
+  <h2 class="m-5" id="about">1. About Me</h2>
 
   <div class="info-card">
    <div>
    <%# change the picture for a better one %>
-    <%= image_tag ("me-no-background.png"), class: "info-img" %>
+    <%# <%= image_tag ("me-no-background.png"), class: "info-img" %>
     <div class="card-text">
       <p>
         oahsfioahfo iahso ifhaoishfoiash flkahak lhsflkahsjfk lahsfaosjfpoasj fpoasj faosp jfpoasjfpo
@@ -56,20 +56,40 @@
    </div>
   </div>
 
-  <h2 class="m-5" id="projects">Projects</h2>
+  <h2 class="m-5" id="projects">2. Projects</h2>
 
   <div class="projects">
     <div class="project theater">
       <div class="image-container">
-        <%= image_tag ("theater.png"), alt: "theater"%>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <%= image_tag ("theater.png"), class: "d-block w-100", alt: "theater" %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag ("theater3.png"), class: "d-block w-100", alt: "theater" %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag ("theater2.png"), class: "d-block w-100", alt: "theater" %>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
       <div class="description-container">
         <h3>Theater</h3>
         <h4>Stack: <span>RUBY ON RAILS</span>, <span>JAVASCRIPT</span>, <span>POSTGRESQL</span></h4>
         <ul>
-          <li>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</li>
-          <li>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</li>
-          <li>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</li>
+          <li>Virtual classroom for high school students that are going to see a play.</li>
+          <li>Students can do activities to help them get familiar with the play.</li>
+          <li>Need student or teacher account to login.</li>
         </ul>
         <div class="links">
           <a href="https://theatr-app.herokuapp.com/" target="_blank">Live</a>
@@ -86,9 +106,9 @@
         <h3>Flight Finder</h3>
         <h4>Stack: <span>PYTHON</span>, <span>SMTPLIB</span>, <span>TEQUILA API</span></h4>
         <ul>
-          <li>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</li>
-          <li>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</li>
-          <li>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</li>
+          <li>An app that looks for a cheap flight from Montreal.</li>
+          <li>It looks through a google sheet for the list of countries I'm searching.</li>
+          <li>If it finds a price cheaper than the one I have put in the sheet, it sends me an email.</li>
         </ul>
         <div class="links">
           <a href="https://github.com/ChrisLefrancois/Flightclub" target="_blank">Repo</a>
@@ -98,15 +118,36 @@
 
      <div class="project hafh">
       <div class="image-container">
-        <%= image_tag ("hafh.png"), alt: "home away from home"%>
+        <%# <%= image_tag ("hafh.png"), alt: "home away from home"%>
+        <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <%= image_tag ("hafh.png"), class: "d-block w-100", alt: "home away from home" %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag ("hafh2.png"), class: "d-block w-100", alt: "home away from home" %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag ("hafh3.png"), class: "d-block w-100", alt: "home away from home" %>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
       <div class="description-container">
-        <h3>Theater</h3>
+        <h3>Home Away From Home</h3>
         <h4>Stack: <span>RUBY ON RAILS</span>, <span>JAVASCRIPT</span>, <span>POSTGRESQL</span> <span>MAPBOX API</span></h4>
         <ul>
-          <li>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</li>
-          <li>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</li>
-          <li>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</li>
+          <li>Social platform to help you integrate your new country with the help of people from your country of origin.</li>
+          <li>Create or join events with other people from your country of origin</li>
+          <li>Unfortunately, this website is not online anymore.</li>
         </ul>
         <div class="links">
           <a href="https://github.com/ChrisLefrancois/home_away" target="_blank">Repo</a>
@@ -122,9 +163,9 @@
         <h3>Cycleasy</h3>
         <h4>Stack: <span>RUBY ON RAILS</span>, <span>JAVASCRIPT</span>, <span>POSTGRESQL</span> <span>MAPBOX API</span></h4>
         <ul>
-          <li>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</li>
-          <li>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</li>
-          <li>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</li>
+          <li>Airbnb clone made for Le Wagon Montreal coding bootcamp.</li>
+          <li>Book a Bike or rent your bike for a few days.</li>
+          <li>Unfortunately, the website is not online anymore.</li>
         </ul>
         <div class="links">
           <a href="https://github.com/paullanza/cycleasy" target="_blank">Repo</a>
@@ -135,7 +176,7 @@
 
   </div>
 
-  <h2 class="mt-4" id="contact">Contact</h2>
+  <h2 class="mt-4" id="contact">3. Contact</h2>
 
   <div class="projects mt-5">
     <div class="contacts">
