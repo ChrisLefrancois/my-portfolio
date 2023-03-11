@@ -7,7 +7,17 @@ Rails.application.configure do
   # it changes. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
+  config.action_mailer.default_url_options = { host: "http://localhost:3000" }
 
+  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.smtp_settings = {
+        port: ENV['MAIL_PORT_SMTP'],
+        address: ENV['MAIL_ADDRESS_SMTP'],
+        user_name: ENV['MAIL_LOGIN_SMTP'],
+        password: ENV['MAILGUN_PASSWORD_SMTP'],
+        authentication: :plain
+
+    }
   # Do not eager load code on boot.
   config.eager_load = false
 
@@ -34,7 +44,7 @@ Rails.application.configure do
   config.active_storage.service = :local
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.perform_caching = false
 

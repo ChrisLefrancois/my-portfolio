@@ -27,6 +27,23 @@
   justify-content: center;
 }
 
-.info-img {
-  border: 3px solid green;
+
+@media only screen and (max-width: 767px) {
+  .info-card {
+    display: block;
+    grid-template-columns: none;
+  }
+
+  .card-text {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .info-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+
 }
