@@ -7,7 +7,6 @@ class ContactsController < ApplicationController
     respond_to do |format|
       if @contact.deliver
         format.html { redirect_to root_path }
-        # format.text { render partial: 'contacts/received', formats: [:html] }
       else
         format.text { render partial: 'pages/form', locals: { contact: @contact }, formats: [:html] }
       end
