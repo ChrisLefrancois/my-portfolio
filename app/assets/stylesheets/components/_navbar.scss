@@ -1,3 +1,4 @@
+
 .navbar-lewagon {
   background-color: $navy;
   justify-content: space-between;
@@ -12,6 +13,10 @@
   width: 40px;
 }
 
-.navbar a {
-  color: $light-gray;
+.navbar-lewagon .nav-link {
+  color: #E6EBFF;
+}
+
+.navbar-lewagon .nav-link:hover {
+  color: #FF4D4D;
 }
